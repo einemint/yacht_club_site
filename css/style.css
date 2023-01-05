@@ -1,0 +1,80 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #163152;
+    background-color: #FDFDFF;
+}
+
+.main-nav-item a {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 18px;
+    color: #163152;
+    text-transform: uppercase;
+}
+
+.hero-block h1 {
+    font-style: italic;
+    font-size: 44px;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+
+.article-dates {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.article-title {
+    font-size: 24px;
+    line-height: 34px;
+    text-decoration: underline;
+    text-decoration-color: #00C6BD;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 15px;
+    text-underline-position: under;
+}
+
+.contacts h2 {
+    font-size: 24px;
+    line-height: 34px;
+    text-decoration: underline;
+    text-decoration-color: #00C6BD;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 15px;
+    text-underline-position: under;
+}
+
+.contacts li {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.contacts address {
+    font-style: normal;
+}
+
+.contacts a {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 22px;
+    color: #163152;
+}
+
+.main-footer p {
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.main-footer h2 {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.main-footer a {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 22px;
+    color: #163152;
+}
