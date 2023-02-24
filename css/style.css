@@ -16,20 +16,26 @@ body {
 
 .main-nav {
     display: flex;
+    align-items: center;
 }
 
 .logo-header {
     width: 64px;
+    height: 68px;
     margin: 0;
     margin-right: auto;
 }
 
 .main-nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
     margin: 0;
     padding: 0;
     list-style: none;
-    width: 635px;
     margin-right: 40px;
+    margin-left: auto;
+    max-width: 990px;
 }
 
 .main-nav-item a {
@@ -40,8 +46,25 @@ body {
     text-transform: uppercase;
 }
 
+.main-nav-item a:hover {
+    color: rgba(22, 49, 82, 0.5);
+}
+  
+.main-nav-item a:active {
+    color: rgba(22, 49, 82, 0.3);
+}
+
 .personal-area-header {
     width: 36px;
+    height: 36px;
+}
+
+.personal-area-header:hover {
+    opacity: 0.5;
+}
+
+.personal-area-header:active {
+    opacity: 0.3;
 }
 
 .main-content {
@@ -57,11 +80,16 @@ body {
 .hero-block h1 {
     margin-top: 0;
     margin-bottom: 40px;
+    margin-left: 70px;
     font-weight: normal;
     font-style: italic;
     font-size: 44px;
     line-height: 60px;
     text-transform: uppercase;
+}
+
+.hero-block img {
+    display: block;
 }
 
 .article {
@@ -85,10 +113,13 @@ body {
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
+    margin: 0;
+    padding: 0;
 }
 
 .article-title {
     margin: 0;
+    padding: 0;
     margin-bottom: 35px;
     font-size: 24px;
     line-height: 34px;
@@ -99,13 +130,15 @@ body {
     text-underline-position: under;
 }
 
-.team-article-img {
+.article img {
     width: 600px;
+}
+
+.team-article-img {
     margin-left: 30px;
 }
 
 .children-article-img {
-    width: 600px;
     margin-right: 30px;
 }
 
@@ -115,6 +148,7 @@ body {
   
 .gallery-title {
     margin: 0;
+    padding: 0;
     margin-bottom: 55px;
     font-size: 24px;
     line-height: 34px;
@@ -137,18 +171,33 @@ body {
 }
   
 .preview-list {
+    display: flex;
+    flex-direction: column;
     padding: 0;
     margin: 0;
     list-style: none;
     width: 170px;
+    height: 690px;
+    justify-content: space-between;
+}
+
+.preview-list a {
+    position: relative;
+    display: block;
 }
   
-.preview-item {
-    margin-bottom: 30px;
+.preview-list a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.5);
 }
   
-.preview-item:last-child {
-    margin-bottom: 0;
+.preview-list a.active-item::before {
+    background-color: transparent;
 }
 
 .news {
@@ -159,6 +208,7 @@ body {
 
 .news-title {
     margin: 0;
+    padding: 0;
     margin-bottom: 55px;
     font-size: 24px;
     line-height: 34px;
@@ -177,17 +227,27 @@ body {
 
 .news-img {
     width: 770px;
+    margin-bottom: 17px;
 }
 
 .news-img-description {
+    margin: 0;
+    padding: 0;
     font-size: 16px;
     line-height: 19px;
     color: #8693A4;
 }
 
 .news h3 {
+    margin: 0;
+    padding: 0;
     font-size: 22px;
     line-height: 26px;
+}
+
+.news h4 {
+    margin: 0;
+    padding: 0;
 }
 
 .news p {
@@ -200,9 +260,39 @@ body {
     line-height: 26px;
 }
 
+.news .teams-list {
+    margin: 0;
+    padding: 19px;
+}
+
+.news .teams-list li {
+    margin-bottom: 8px;
+}
+
+.news .teams-list li:last-child {
+    margin-bottom: 0;
+}
+
 .news .news-comment {
     font-size: 26px;
     line-height: 36px;
+    border-left: 2px solid #00C6BD;
+    margin: 0;
+    height: 72px;
+    padding: 0 20px;
+}
+
+.news .news-footer {
+    display: flex;
+    align-items: center;
+}
+
+.news .news-footer img {
+    margin-right: 15px;
+}
+
+.news .news-footer a {
+    margin-left: auto;
 }
 
 .news-author-name {
@@ -212,10 +302,26 @@ body {
     color: #163152;
 }
 
+.news-author-name:hover {
+    opacity: 0.5;
+}
+
+.news-author-name:active {
+    opacity: 0.3;
+}
+
 .news .news-post time {
     font-size: 16px;
     line-height: 19px;
     color: #8693A4;
+}
+
+.news-share:hover {
+    opacity: 0.5;
+}
+  
+.news-share:active {
+    opacity: 0.3;
 }
 
 .contacts {
@@ -227,12 +333,13 @@ body {
 
 .contacts-content {
     width: 400px;
+    align-self: center;
 }
 
 .contacts h2 {
     margin: 0;
     padding: 0;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     font-size: 24px;
     line-height: 34px;
     text-decoration: underline;
@@ -243,12 +350,35 @@ body {
 }
 
 .contacts h3 {
+    margin: 0;
+    padding: 0;
     font-size: 16px;
     line-height: 22px;
 }
 
+.contacts .contacts-content-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.contacts .contacts-content-item:last-child {
+    margin-bottom: 0;
+}
+
+.contacts .contacts-content-item a:hover {
+    color: rgba(22, 49, 82, 0.5);
+}
+  
+.contacts .contacts-content-item a:active {
+    color: rgba(22, 49, 82, 0.3);
+}
+
 .contacts ul {
     margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .contacts li {
@@ -263,6 +393,20 @@ body {
 .contacts a {
     text-decoration: none;
     color: #163152;
+}
+
+.contacts .social-media-list {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.contacts .social-media-item a:hover {
+    opacity: 0.5;
+}
+  
+.contacts .social-media-item a:active {
+    opacity: 0.3;
 }
 
 .contacts-img {
@@ -317,9 +461,14 @@ body {
 
 .main-footer h2 {
     margin: 0;
+    margin-bottom: 20px;
     padding: 0;
     font-size: 14px;
     line-height: 18px;
+}
+
+.main-footer .footer-coloumn-item {
+    margin-bottom: 12px;
 }
 
 .main-footer a {
@@ -327,4 +476,12 @@ body {
     font-size: 14px;
     line-height: 22px;
     color: #163152;
+}
+
+.main-footer a:hover {
+    color: rgba(22, 49, 82, 0.5);
+}
+  
+.main-footer a:active {
+    color: rgba(22, 49, 82, 0.3);
 }
