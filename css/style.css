@@ -142,6 +142,95 @@ body {
     margin-right: 30px;
 }
 
+.yacht-charter {
+    margin-bottom: 120px;
+  }
+  
+.yacht-charter-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.yacht-charter-card {
+    max-width: 310px;
+    height: 427px;
+    box-shadow: 0px 4px 30px rgba(22, 49, 82, 0.12);
+    padding: 30px;
+}
+  
+.yacht-charter-title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 55px;
+    font-size: 24px;
+    line-height: 34px;
+    text-decoration: underline;
+    text-decoration-color: #00C6BD;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 15px;
+    text-underline-position: under;
+}
+  
+.card-img {
+    display: block;
+}
+  
+.card-title {
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 18px;
+}
+
+.card-title a:hover {
+    opacity: 0.5;
+}
+
+.card-title a:active {
+    opacity: 0.3;
+}
+  
+.card-description {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+  
+.card-options {
+    margin: 0;
+    padding: 0;
+    list-style: inside;
+    margin-bottom: 29px;
+}
+  
+.card-option {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 4px;
+}
+  
+.card-price {
+    display: flex;
+}
+  
+.card-price-name {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px; 
+}
+  
+.card-price-value {
+    margin-left: auto;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+}
+
 .gallery {
     margin-bottom: 120px;
 }
